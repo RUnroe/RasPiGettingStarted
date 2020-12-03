@@ -1,0 +1,13 @@
+<section id="main-section">
+    <header>
+        <h1>Raspberry Pi Getting Started</h1>
+    </header>
+    <section id="contents">
+        <nav>
+            <div *ngFor="let page of pages" class="nav-btn" >{{page}}</div>
+        </nav>
+        <section id="body-section">
+            <router-outlet></router-outlet>
+        </section>
+    </section>
+</section>

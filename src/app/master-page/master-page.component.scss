@@ -1,0 +1,15 @@
+@use "../../options"; 
+
+#main-section {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+header {
+    background-color: options.$color-primary;
+    color: options.$color-bg-primary;
+    font-weight: bold;
+    padding:0.4em 1em;
+}
