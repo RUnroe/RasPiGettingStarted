@@ -11,11 +11,11 @@ import { Router } from '@angular/router';
 export class Page1Component implements OnInit {
 
   pages = GlobalOptions.pages;
-  currPage;
+  currPageName;
   
   constructor(private router:Router) { 
     for(let page of this.pages) {
-      if(page.pageNum == 1) this.currPage = page;
+      if(page.pageNum == 1) this.currPageName = page.name;
     }
   }
 

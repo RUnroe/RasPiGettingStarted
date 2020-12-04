@@ -10,11 +10,11 @@ import { Router } from '@angular/router';
 export class Page7Component implements OnInit {
 
   pages = GlobalOptions.pages;
-  currPage;
+  currPageName;
   
   constructor(private router:Router) { 
     for(let page of this.pages) {
-      if(page.pageNum == 7) this.currPage = page;
+      if(page.pageNum == 7) this.currPageName = page.name;
     }
   }
 

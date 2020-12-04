@@ -22,7 +22,7 @@ a {
     transition: color 0.15s ease;
     font-weight: bold;
     &:hover {
-        color: saturate(darken(options.$color-primary, 10%), 30%);
+        color: #c31c4a;
     }
 }
 
