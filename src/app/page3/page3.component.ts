@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalOptions } from '../options';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page3',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page3Component implements OnInit {
 
-  constructor() { }
+  pages = GlobalOptions.pages;
+  currPage;
+  
+  constructor(private router:Router) { 
+    for(let page of this.pages) {
+      if(page.pageNum == 3) this.currPage = page;
+    }
+  }
 
   ngOnInit(): void {
+  }
+
+
+
+  navigateClick(index:number) {
+    this.router.navigate([`/page-${index}`]);
   }
 
 }
