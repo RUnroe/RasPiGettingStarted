@@ -20,7 +20,7 @@ const routes: Routes = [
     {path:'page-7', component:Page7Component}
     
   ]},
-  {path:'**', redirectTo: '/home', pathMatch: 'full'}
+  {path:'**', redirectTo: '/page-1', pathMatch: 'full'}
 ];
 
 @NgModule({

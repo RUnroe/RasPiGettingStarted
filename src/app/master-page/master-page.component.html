@@ -4,7 +4,9 @@
     </header>
     <section id="contents">
         <nav>
-            <div *ngFor="let page of pages" class="nav-btn" >{{page}}</div>
+            <div class="nav-items">
+                <a *ngFor="let page of pages" class="nav-link" routerLink="/page-{{page.pageNum}}" routerLinkActive="active"><div class="nav-btn">{{page.name}}</div></a>
+            </div>
         </nav>
         <section id="body-section">
             <router-outlet></router-outlet>
