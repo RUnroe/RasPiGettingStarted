@@ -7,12 +7,13 @@ import { GlobalOptions } from '../options';
 })
 export class MasterPageComponent implements OnInit {
   pages = GlobalOptions.pages;
+  
   constructor() { 
-    console.log(this.pages);
-    console.log(GlobalOptions);
+    
   }
 
   ngOnInit(): void {
+    
   }
 
 }
