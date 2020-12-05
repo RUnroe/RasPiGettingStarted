@@ -44,7 +44,11 @@ nav {
     text-decoration: none;
     .nav-btn {
         padding:0.8em 1em;
+        transition: color 0.2s ease;
 
+        &:hover {
+            color:options.$color-secondary;
+        }
     }
     &.active {
         color: options.$color-primary;

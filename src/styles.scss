@@ -22,7 +22,7 @@ a {
     transition: color 0.15s ease;
     font-weight: bold;
     &:hover {
-        color: #c31c4a;
+        color:options.$color-secondary;
     }
 }
 
@@ -35,20 +35,28 @@ a {
 }
 
 .page-body {
-    margin-bottom: 5em;
+    margin-bottom: 6em;
     h3 {
         font-size: 1.3em;
         margin:2em 0 1em 0;
     }
+    
     p, li{
         line-height: 1.5em;
         font-size: 1.05em;
+        
+    }
+    li {
         list-style-type: circle;
     }
     img {
         margin:auto;
         display: block;
         max-width: 500px;
+        
+    }
+    img.end-of-section {
+        margin-bottom: 4.5em;
     }
 }
 
