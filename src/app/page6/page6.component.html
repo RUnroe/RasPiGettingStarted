@@ -1,6 +1,20 @@
 <h2 class="page-title">{{currPageName}}</h2>
 
 <section class="page-body">
+    <p>SSH is a tool that allows you to access the Raspberry Pi's terminal from another computer. This
+        page will not show you how to use SSH, but will show you how to enable SSH on the Raspberry Pi.</p>
+
+    <p>There are a few ways to go about enabling SSH. In this demonstration, you will need to open the 
+        terminal (shown in UI Tour) and run two commands. The first command to run is "sudo systemctl enable ssh".
+        This will allow the Raspberry Pi to use SSH, but will not start using it right away. To start using SSH,
+        you will need to run "sudo systemctl start ssh". You now have enabled SSH!</p>
+    <img src="../../assets/enablessh.png" alt="Enable SSH" class="end-of-section img-lg">
+
+    <p>To access the Raspberry Pi's shell through SSH, you will have to find its IP address. Type in 
+        "ip a" to see a list of IP addresses the Raspberry Pi has. In this demonstration, the IPv4 address
+        under "wlan0" is the address that will be used.
+    </p>
+    <img src="../../assets/findip.png" alt="Find local IP address" class="end-of-section img-lg">
 
 </section>
 
