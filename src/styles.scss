@@ -53,11 +53,15 @@ a {
         margin:auto;
         display: block;
         max-width: 500px;
-        
+        &.end-of-section {
+            margin-bottom: 4.5em;
+        }
+        &.img-lg {
+            max-width: 650px;
+        }
     }
-    img.end-of-section {
-        margin-bottom: 4.5em;
-    }
+    
+
 }
 
 
