@@ -5,7 +5,8 @@ export class GlobalOptions  {
         {name: "Overview", pageNum: 3},
         {name: "Setup - Imaging", pageNum: 4},
         {name: "Setup - Installation", pageNum: 5},
-        {name: "UI Tour", pageNum: 6},
-        {name: "Explore", pageNum: 7}
+        {name: "Setup - SSH", pageNum: 6},
+        {name: "UI Tour", pageNum: 7},
+        {name: "Explore", pageNum: 8}
     ]
 }
