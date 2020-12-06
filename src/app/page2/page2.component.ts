@@ -19,6 +19,7 @@ export class Page2Component implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
   }
 
 

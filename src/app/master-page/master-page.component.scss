@@ -13,6 +13,9 @@ header {
     color: options.$color-bg-primary;
     font-weight: bold;
     padding:0.4em 1em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #contents {
@@ -26,6 +29,26 @@ header {
     padding:1em 2.5em;
 
 }
+
+.nav-collapse-icon {
+    width:35px;
+    border:1.7px solid options.$color-bg-primary;
+    border-radius: 4px;
+    padding:8px 7px;
+    cursor: pointer;
+    div {
+        width:100%;
+        height:4px;
+        background-color: options.$color-bg-primary;
+        border-radius: 2px;
+    }
+   :nth-child(2) {
+        margin: 7px 0;
+   }
+      
+}
+
+
 
 nav {
     width:100%;
@@ -59,3 +82,9 @@ nav {
     }
 }
 
+@media all and (max-width:975px) {
+    #body-section {
+        padding:1em;
+    
+    }
+}
