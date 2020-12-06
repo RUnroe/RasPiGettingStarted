@@ -1,12 +1,12 @@
 <section id="main-section">
     <header>
         <h1>Raspberry Pi Getting Started</h1>
-        <div class="nav-collapse-icon">
+        <div class="nav-collapse-icon" (click)="toggleNavBar()">
             <div></div>  <div></div> <div></div>
         </div>
     </header>
     <section id="contents">
-        <nav>
+        <nav class="hidden">
             <div class="nav-items">
                 <a *ngFor="let page of pages" class="nav-link" routerLink="/page-{{page.pageNum}}" routerLinkActive="active"><div class="nav-btn">{{page.name}}</div></a>
             </div>

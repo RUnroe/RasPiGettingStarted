@@ -22,6 +22,7 @@ header {
     display:grid;
     grid-template-columns: 15em 1fr;
     min-height: calc(100vh - 5.1em);
+   
 }
 
 #body-section {
@@ -30,7 +31,9 @@ header {
 
 }
 
+
 .nav-collapse-icon {
+    display:none;
     width:35px;
     border:1.7px solid options.$color-bg-primary;
     border-radius: 4px;
@@ -87,4 +90,23 @@ nav {
         padding:1em;
     
     }
+}
+
+@media all and (max-width:750px) {
+    .nav-collapse-icon {
+        display:block;
+    }
+    #contents {
+        display:block;
+    }
+    nav {
+        overflow: hidden;
+        &.hidden {
+            padding:0;
+            min-height: 0;
+            height:0;
+            
+        }
+    }
+
 }

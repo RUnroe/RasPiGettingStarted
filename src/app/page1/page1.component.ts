@@ -21,6 +21,7 @@ export class Page1Component implements OnInit {
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
+    document.getElementsByTagName("nav")[0].classList.add("hidden");
   }
 
 
