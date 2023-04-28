@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "raspiGettingStarted"
+  "defaultProject": "raspiGettingStarted",
+  "cli": {
+    "analytics": false
+  }
 }
